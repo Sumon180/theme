@@ -19,28 +19,28 @@ const availableColors = [
   {
     name: "Violet",
     root: {
-      "--primary": "oklch(.541 .281 293.009)",
+      "--primary": "#7f22fe",
     },
     dark: {
-      "--primary": "oklch(.606 .25 292.717)",
+      "--primary": "#8e51ff",
     },
   },
   {
     name: "Green",
     root: {
-      "--primary": "oklch(0.723 0.219 149.579)",
+      "--primary": "#009689",
     },
     dark: {
-      "--primary": "oklch(0.696 0.17 162.48)",
+      "--primary": "#00bba7",
     },
   },
   {
     name: "Red",
     root: {
-      "--primary": "oklch(.586 .253 17.585)",
+      "--primary": "#e60076",
     },
     dark: {
-      "--primary": "oklch(.645 .246 16.439)",
+      "--primary": "#f6339a",
     },
   },
 ];

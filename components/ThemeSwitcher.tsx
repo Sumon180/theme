@@ -69,7 +69,7 @@ export default function ThemeSwitcher() {
                 }}
                 className={`w-full flex items-center gap-2 px-2 py-1.5 text-sm rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 ${
                   theme === t.value
-                    ? "font-semibold text-blue-600 dark:text-blue-400"
+                    ? "font-semibold text-primary dark:text-primary"
                     : ""
                 }`}
               >
@@ -92,7 +92,7 @@ export default function ThemeSwitcher() {
                 }}
                 className={`w-full flex items-center cursor-pointer gap-2 px-2 py-1.5 text-sm rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 ${
                   color.name === c.name
-                    ? "font-semibold text-blue-600 dark:text-blue-400"
+                    ? "font-semibold text-primary dark:text-primary"
                     : ""
                 }`}
               >
