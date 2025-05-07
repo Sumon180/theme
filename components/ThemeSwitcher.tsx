@@ -7,7 +7,7 @@ import useColorStore from "@/hooks/useColorStore";
 import useIsMounted from "@/hooks/useIsMounted";
 
 export default function ThemeSwitcher() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
   const { availableColors, color, setColor } = useColorStore(theme);
   const isMounted = useIsMounted();
 
@@ -42,12 +42,15 @@ export default function ThemeSwitcher() {
         onClick={toggleDropdown}
         className="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-800 text-sm rounded-md"
       >
-        {isMounted && theme === "dark" ? (
+        {isMounted && resolvedTheme === "dark" ? (
           <Moon className="h-4 w-4" />
         ) : (
           <Sun className="h-4 w-4" />
         )}
-        <span className="capitalize">{isMounted ? theme : "Theme"}</span>
+        <span className="capitalize">
+          {isMounted ? resolvedTheme : "Theme"}
+        </span>
+
         <ChevronDownIcon className="h-4 w-4" />
       </button>
 
